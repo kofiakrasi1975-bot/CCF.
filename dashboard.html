@@ -1,0 +1,39 @@
+dashboard.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CCF Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>CCF Dashboard</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div id="user-info">
+      <p>Welcome, <span id="user-name">...</span></p>
+      <p>Role: <span id="user-role">...</span></p>
+    </div>
+
+    <!-- Admin-only section -->
+    <div id="admin-section" class="hidden">
+      <h2>Admin Panel</h2>
+      <p>Manage users, units, and view all attendance records.</p>
+      <!-- You'll expand this later -->
+    </div>
+
+    <!-- Leader section (visible to all logged-in users) -->
+    <div id="leader-section">
+      <h2>Attendance</h2>
+      <p>Record and view attendance for your unit.</p>
+      <!-- You'll expand this later -->
+    </div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
